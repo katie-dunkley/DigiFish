@@ -21,5 +21,6 @@ Optional step to help with scaling. Including a reference image (i.e. a screensh
 
 ### 4) Adding light 
 Users can add an overhead light to the scene through the DigiFish panel, and through the light control panel that pops up, adjust the brightness, colour and location. 
-![AddInfo](https://github.com/user-attachments/assets/e32f9150-7d4b-4851-a9a4-5307dce3d05a)
+![AddLight](https://github.com/user-attachments/assets/113faf2b-7162-45e7-91ed-c9f0437d5cca)
+
 
