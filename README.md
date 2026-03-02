@@ -12,3 +12,9 @@ Add info to scene about frames per second and resoultion of video data (links to
 ![AddInfo](https://github.com/user-attachments/assets/76414623-0040-44ab-8f59-a8f044bbd62d)
 
 ### 3) Importing scene 
+Scenes can be generated through a range of 3D modelling approaches including photogrammetry and Neural Radiance Fields. Scenes should be edited in a seperate .blend file before being imported into the DigiFish .blend file. 
+![AddScene](https://github.com/user-attachments/assets/0f380ac0-c7f2-414f-9c6d-5595f05bac5e)
+
+### 3b) Adding reference image 
+Optional step to help with scaling. Including a reference image (i.e. a screenshot of a lateral camera) is useful to help position and scale the scene so that the tracking data aligns correctly with the scene. The image should automatically scale to the correct size using the pixel to cm ratio supplied by the user.
+![AddRefImage](https://github.com/user-attachments/assets/46ecee29-9d83-48c4-ba9c-ba6ed1722f5f)
