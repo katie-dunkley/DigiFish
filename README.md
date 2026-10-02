@@ -34,18 +34,20 @@ In a seperate .blend file ensure fish model is facing the correct direction. Bec
 ![AddFish](https://github.com/user-attachments/assets/0bb75a82-8826-4298-9830-885f7c3ea654)
 
 #### Adjust eye position
-To ensure eye cameras are in the correct location, users may have to manually move them on the model fish (using "G" on the keyboard). The specific xyz location of the left eye camera can then be imported with the fish info ("Eye Cam Location") for reproducability and consistency across eyes/individuals. Locations should be added as "1, x, y, z" (with 1 indicating a scale of 1). Users can change the size of the eyes through altering the scale value (although this does not change the eye camera size/resolution).  
+To ensure eye cameras are in the correct location, users may have to manually move them on the model fish (using "G" on the keyboard). The specific xyz location of the left eye camera can then be imported with the fish info ("Eye Cam Location") for reproducibility and consistency across eyes/individuals. Locations should be added as "1, x, y, z" (with 1 indicating a scale of 1). Users can change the size of the eyes through altering the scale value (although this does not change the eye camera size/resolution).  
 ![MoveEyes](https://github.com/user-attachments/assets/58aeb0a8-0ef8-4ba4-888b-17413b84a074)
 
 ![MoveEyes2](https://github.com/user-attachments/assets/039868d5-40b7-4147-879d-8985f03a1030)
 
 ### 3) Add bones
-To map keypoint tracking data onto the model fish, users need to supply the name of keypoints and their proportional distance along the body (with the 1st point at 0). Keypoint names need to match the keypoints used in tracking. Here we will add four keypoints: Head, COM, Caudal, Tail, at the locations: 0.23, 0.6, 0.8. DigiFish will automatically add an end point at position 1.0 if it is not supplied the the user. Users can also add in segments which function like vertebrae, this helps increase or decrease the degree of bend on the fish. Here we will add 5 segments between the COM and Caudal, and 4 between the Caudal and Tail (COM: 5, Caudal:4). Ideally users should keep only one segment for the first two keypoints as DigiFish assumes a straighline vector between them. 
+To map keypoint tracking data onto the model fish, users need to supply the name of keypoints and their proportional distance along the body (with the 1st point at 0). Keypoint names need to match the keypoints used in tracking. Here we will add four keypoints: Head, COM (centre-of-mass), Caudal, Tail, at the locations: 0.23, 0.6, 0.8. DigiFish will automatically add an end point at position 1.0 if it is not supplied the the user. Users can also add in segments which function like vertebrae, this helps increase or decrease the degree of bend on the fish. Here we will add 5 segments between the COM and Caudal, and 4 between the Caudal and Tail (COM: 5, Caudal:4). Ideally users should keep only one segment for the first two keypoints as DigiFish assumes a straighline vector between them. 
 
 <img width="300" height="224" alt="Screenshot 2025-12-03 at 12 12 33" src="https://github.com/user-attachments/assets/def5e3f6-5ada-428d-ab85-65f5818a92a9" />
 
 ![AddBones](https://github.com/user-attachments/assets/48399954-7e84-41d0-86ee-f6fbbd00f19f)
 
+### 4) Animate fish
+To animate a model fish, users need to supply x-y (and optionally z) tracking data for each keypoint as a csv file. Column names must match the keypoint names used in the 'Add bones' stage. 
 
 
 
