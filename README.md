@@ -64,7 +64,7 @@ This step moves the fish model to the correct location in the scene.
 
 <img width="1512" height="859" alt="Screenshot 2026-10-02 at 11 22 36" src="https://github.com/user-attachments/assets/54ad2fbb-1583-4cd6-9869-4f708930ba94" />
 
-#### _Eye tracking data _
+#### _Eye tracking data_
 Eye tracking data must be imported as calculated angles with negative angles indicating that the eye faces inwards towards the snout, and positive angles outward towards the tail. These data should be supplied in a CSV file with two separately named columns and a 'frame_idx' column. These names can be supplied by the user in the DigiFish panel. A smoothing value will also need to be supplied for these data and can differ from those values supplied for the tracking (value will depend on the temporal resolution of the tracking data). 
 <img width="282" height="305" alt="Screenshot 2026-10-02 at 11 33 51" src="https://github.com/user-attachments/assets/afee163c-8da6-4330-8b03-cea090b0e602" />
 
