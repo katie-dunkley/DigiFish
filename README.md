@@ -1,7 +1,8 @@
 # DigiFish: A flexible open-source tool for animating realistic virtual fish and reconstructing visual fields from tracking data
 
 ## Adding DigiFish to Blender
-Download the latest version [here]. Blender add-ons must be uploaded as `zip files` via the `Preferences` menu. 
+Download the latest version [here]. Blender add-ons must be installed as a `.zip` file via the `Preferences` menu. Select `Install from Disk`, choose the DigiFish `.zip` file, and DigiFish will be installed automatically.
+
 <img width="1280" height="727" alt="AddDigiFish" src="https://github.com/user-attachments/assets/eb209a4f-cae8-4b24-bddc-2b8f9d9a09aa" />
 
 ## Setting up the scene in DigiFish
