@@ -112,8 +112,17 @@ It is also possible to move the camera using the side panel:
 _Add side camera_
 <img width="1280" height="727" alt="AddSideCamera" src="https://github.com/user-attachments/assets/0e70e4c9-d918-4f52-8999-1a212fa633bb" />
 
+### 6) Render videos 
+_Render from camera in scene_
+DigiFish renders animations using the EEVEE engine as default as it is computationally efficient. DigiFish creates `.mp4` files via the `'Render video - camera'` button which is set to the FOV specified when adding cameras. Users should first select which camera they wish to render via the `'Select camera'` button. Rendering via this method creates a popup window showing each frane. The rendering frame rate will be the same as that specified in the `'Add info'` panel. The video will be saved to the same folder as the existing project.
 
+<img width="1280" height="727" alt="RenderCamera" src="https://github.com/user-attachments/assets/20c80429-c01d-47f7-be22-2b3e836b3f03" />
 
+_Render from point of view_
+To render point of view (POV) footage, DigiFish integrates with the eeVR add on (https://github.com/EternalTrail/eeVR) which which enables fisheye rendering from virtual cameras positioned at the model’s eyes. This method produces a series of `.png` images which the user can then convert to video format if needed. Press `'Escape'` on the keyboard to cancel this step. 
+<img width="1280" height="727" alt="RenderPOV" src="https://github.com/user-attachments/assets/0e6de3db-65da-4a11-9c49-2df9e2dd512b" />
+
+_Example output image_:<img width="2704" height="2704" alt="frame000000" src="https://github.com/user-attachments/assets/ab456970-6720-4c45-a232-4d15ce82325d" />
 
 
 
