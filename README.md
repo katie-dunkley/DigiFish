@@ -95,7 +95,7 @@ For example, four keypoints might be defined as:
 
 If an endpoint at `1.0` is not supplied, DigiFish adds one automatically.
 
-Users can also add intermediate segments, which function similarly to vertebrae and control how smoothly the model bends between tracked keypoints. For example, five segments can be added between the COM and Caudal keypoints and four between the Caudal and Tail keypoints (`COM: 5, Caudal: 4`).
+Users can also add intermediate segments, which function similarly to vertebrae and control how smoothly the model bends between tracked keypoints. For example, five segments can be added between the COM (centre-of-mass) and Caudal keypoints and four between the Caudal and Tail keypoints (`COM: 5, Caudal: 4`).
 
 Ideally, only one segment should be used between the first two keypoints because DigiFish assumes a straight-line vector between them.
 
