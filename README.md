@@ -103,11 +103,19 @@ _Example multi fish CSV file_: [Example_multifish.csv](https://github.com/user-a
 ### 5) Adding a camera 
 In addition to the eye cameras, cameras can be added to view the scene from above or the side. Users can specify the distance of the camera from the scene and the field of view. For the side camera, DigiFish inserts the camera on a circle and users can move/rotate the camera around the circle to position it (using `'G'` and `'R'` on the keypad for moving and rotating respectively). 
 
+_Add top camera_
 <img width="1280" height="727" alt="AddTopCamera" src="https://github.com/user-attachments/assets/96bcb4a2-1016-4651-9f40-b9af4ddecdc6" />
 
+It is also possible to move the camera using the side panel:
+<img width="1280" height="727" alt="MoveTopCamera" src="https://github.com/user-attachments/assets/76966540-3431-4bdf-94d4-6346ee4be276" />
+
+_Add side camera_
+<img width="800" height="454" alt="AddSideCamera" src="https://github.com/user-attachments/assets/e4c834b1-e394-42df-8cad-791a9327cb6b" />
 
 
-It is also possible to move the camera using the side panel. 
+
+
+
 
 
 
