@@ -50,12 +50,9 @@ To map keypoint tracking data onto the model fish, users need to supply the name
 To animate a model fish, users need to supply x-y (and optionally z) tracking data for each keypoint as a csv file. Column names must match the keypoint names used in the 'Add bones' stage and be followed by '.x', '.y' or '.z'. x-y data can be supplied in pixels (as it will be scaled by DigiFish using the supplied conversion) whilst z values should be provided in cms. If z is not supplied DigiFish assigns z as 1 cm as default.  
 
 <img width="939" height="294" alt="Example csv" src="https://github.com/user-attachments/assets/6380a6fa-44cb-4f13-9f77-cc415ca04d80" />
-
 [SLEAPTracks_Zebra1.csv](https://github.com/user-attachments/files/32949376/SLEAPTracks_Zebra1.csv)
 
-If users wish to also animate pitch (head-up/down posture), the tracking file should also contain a 'pitch_deg' bearing column, with positive values indicating a head-up posture. This bearing value can be calculated using the following script and 3D tracking data of the first and second keypoints. 
-
-[Code_pitch.py](https://github.com/user-attachments/files/32950388/Code_pitch.py)
+If users wish to also animate pitch (head-up/down posture), the tracking file should also contain a 'pitch_deg' bearing column, with positive values indicating a head-up posture. This bearing value can be calculated using the following script and 3D tracking data of the first and second keypoints. [Code_pitch.py](https://github.com/user-attachments/files/32950388/Code_pitch.py)
 
 CSV files are then added to DigiFish using the 'Animate fish' button on the DigiFish panel. Users supply smoothing values for the keypoints. DigiFish can work with different smoothing values for the different animation stages (posture, orient, move location), and users are encouraged to adjust these values until they are happy that the smoothness of the motion captures the real swimming behaviour of the fish being modelled. The smoothing function within DigiFish interacts with the frames per second of the tracking data, but broadly larger values remove more rapid changes in the data over time. Once OK is clicked this step may take a little time to implement. The eye tracking section can be left blank if these data are not available. 
 
