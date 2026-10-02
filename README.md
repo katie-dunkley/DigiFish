@@ -110,7 +110,8 @@ It is also possible to move the camera using the side panel:
 <img width="1280" height="727" alt="MoveTopCamera" src="https://github.com/user-attachments/assets/76966540-3431-4bdf-94d4-6346ee4be276" />
 
 _Add side camera_
-<img width="800" height="454" alt="AddSideCamera" src="https://github.com/user-attachments/assets/e4c834b1-e394-42df-8cad-791a9327cb6b" />
+<img width="1280" height="727" alt="AddSideCamera" src="https://github.com/user-attachments/assets/0e70e4c9-d918-4f52-8999-1a212fa633bb" />
+
 
 
 
