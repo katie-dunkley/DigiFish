@@ -71,7 +71,7 @@ Eye tracking data must be imported as calculated angles with negative angles ind
 
 _Example code for calculating eye angles from tracking data:_ [Code_eyeangle.py](https://github.com/user-attachments/files/32956414/Code_eyeangle.py)
 
-### 5) Add and animate multiple fish
+### Add and animate multiple fish
 While multiple fish can be added independently through the steps outlined above, DigiFish also allows users to upload a CSV file with all the relevant info for as many fish are required. This CSV should contain the following columns: 
   1) _Name_: Name Blender will use for the fish model (e.g. `'Zebra'`).
   2) _ID_: Unique identification number for the individual fish.
@@ -94,11 +94,22 @@ While multiple fish can be added independently through the steps outlined above,
   19) _VideoWidth_: Width of the source video, in pixels.
   20) _PostureTrackSmooth_: Smoothing value applied to posture-tracking data before reconstruction.
   21) _OrientTrackSmooth_: Smoothing value applied to orientation-tracking data before reconstruction.
-  22)_ MoveTrackSmooth_: Smoothing value applied to movement-tracking data before reconstruction.
+  22) _MoveTrackSmooth_: Smoothing value applied to movement-tracking data before reconstruction.
 
 All these individual column headings are discussed above in the steps listed, but also see the example CSV file below. 
 
 _Example multi fish CSV file_: [Example_multifish.csv](https://github.com/user-attachments/files/32956820/Example_multifish.csv)
+
+### 5) Adding a camera 
+In addition to the eye cameras, cameras can be added to view the scene from above or the side. Users can specify the distance of the camera from the scene and the field of view. For the side camera, DigiFish inserts the camera on a circle and users can move/rotate the camera around the circle to position it (using `'G'` and `'R'` on the keypad for moving and rotating respectively). 
+
+<img width="1280" height="727" alt="AddTopCamera" src="https://github.com/user-attachments/assets/96bcb4a2-1016-4651-9f40-b9af4ddecdc6" />
+
+
+
+It is also possible to move the camera using the side panel. 
+
+
 
 
 
