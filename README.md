@@ -55,9 +55,12 @@ To animate a model fish, users need to supply x-y (and optionally z) tracking da
 
 If users wish to also animate pitch (head-up/down posture), the tracking file should also contain a 'pitch_deg' bearing column, with positive values indicating a head-up posture. This bearing value can be calculated using the following script and 3D tracking data of the first and second keypoints. 
 
-[Uploading Code_pitch.py…]()
+[Code_pitch.py](https://github.com/user-attachments/files/32950388/Code_pitch.py)
 
-CSV files are then added to DigiFish using the 'Animate fish' button on the DigiFish panel. Users supply smoothing values for the keypoints. DigiFish can work with different smoothing values for the different animation stages (posture, orient, move location), and users are encouraged to adjust these values until they are happy that the smoothness of the motion captures the real swimming behaviour of the fish being modelled. The smoothing function within DigiFish interacts with the frames per second of the tracking data, but broadly larger values remove more rapid changes in the data over time. Once OK is clicked this step may take a little time to implement. 
+CSV files are then added to DigiFish using the 'Animate fish' button on the DigiFish panel. Users supply smoothing values for the keypoints. DigiFish can work with different smoothing values for the different animation stages (posture, orient, move location), and users are encouraged to adjust these values until they are happy that the smoothness of the motion captures the real swimming behaviour of the fish being modelled. The smoothing function within DigiFish interacts with the frames per second of the tracking data, but broadly larger values remove more rapid changes in the data over time. Once OK is clicked this step may take a little time to implement. The eye tracking section can be left blank if these data are not available. 
+
+<img width="1280" height="727" alt="AnimateFish" src="https://github.com/user-attachments/assets/63921830-421d-4f62-a511-c84cf7b65caa" />
+
 
 
 
