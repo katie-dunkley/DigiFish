@@ -60,6 +60,7 @@ _Example code for calculating pitch from 3D tracking data:_ [Code_pitch.py](http
 CSV files are then added to DigiFish using the 'Animate fish' button on the DigiFish panel. Users supply smoothing values for the keypoints. DigiFish can work with different smoothing values for the different animation stages (posture, orient, move location), and users are encouraged to adjust these values until they are happy that the smoothness of the motion captures the real swimming behaviour of the fish being modelled. The smoothing function within DigiFish interacts with the frames per second of the tracking data, but broadly larger values remove more rapid changes in the data over time. Once 'OK' is clicked this step may take some time to implement. The eye tracking section can be left blank if these data are not available. 
 
 <img width="1280" height="727" alt="AnimateFish" src="https://github.com/user-attachments/assets/63921830-421d-4f62-a511-c84cf7b65caa" />
+
 This step moves the fish model to the correct location in the scene. 
 
 <img width="1512" height="859" alt="Screenshot 2026-10-02 at 11 22 36" src="https://github.com/user-attachments/assets/54ad2fbb-1583-4cd6-9869-4f708930ba94" />
@@ -70,7 +71,30 @@ Eye tracking data must be imported as calculated angles with negative angles ind
 
 _Example code for calculating eye angles from tracking data:_ [Code_eyeangle.py](https://github.com/user-attachments/files/32956414/Code_eyeangle.py)
 
-
+### 5) Add and animate multiple fish
+While multiple fish can be added independently through the steps outlined above, DigiFish also allows users to upload a CSV file with all the relevant info for as many fish are required. This CSV should contain the following columns: 
+  1) _Name_: Name Blender will use for the fish model (e.g. `'Zebra'`).
+  2) _ID_: Unique identification number for the individual fish.
+  3) _ModelPath_: File path to the `.blend` file containing the fish model to be added.
+  4) _Size_: Desired body length of the fish model, in cm.
+  5) _EyeCam_: Whether eye cameras should be added to the fish model.
+  6) _EyeFOV_: Field of view of the eye camera(s), in degrees.
+  7) _EyeCamLocation_: Location of the eye camera(s) on the fish model.
+  8) _Keypoints_: Names of the tracked body keypoints used to reconstruct the fish's posture.
+  9) _KeypointPositions_: Corresponding locations of the keypoints on the fish model.
+  10) _Segments_: Body segments defined by pairs or groups of keypoints, used to reconstruct the fish's posture.
+  11) _TrackData_: File path to the tracking data used to reconstruct the fish's movement and posture.
+  12) _TrackDataFPS_: Frame rate (frames per second) of the tracking data.
+  13) _EyeTrackData_: File path to the eye-tracking data used to reconstruct eye movements.
+  14) _EyeTrackDataFPS_: Frame rate (frames per second) of the eye-tracking data.
+  15) _EyeTrackColumns_: Names of the columns in the eye-tracking data containing the eye-orientation values to be reconstructed.
+  16) _EyeTrackSmoothWindow_: Smoothing value applied to the eye-tracking data before reconstruction.
+  17) _PixelConvert_: Conversion factor used to convert tracking coordinates from pixels to real-world units.
+  18) _VideoHeight_: Height of the source video, in pixels.
+  19) _VideoWidth_: Width of the source video, in pixels.
+  20) _PostureTrackSmooth_: Smoothing value applied to posture-tracking data before reconstruction.
+  21) _OrientTrackSmooth_: Smoothing value applied to orientation-tracking data before reconstruction.
+  22)_ MoveTrackSmooth_: Smoothing value applied to movement-tracking data before reconstruction.
 
 
 
