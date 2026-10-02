@@ -95,7 +95,9 @@ While multiple fish can be added independently through the steps outlined above,
   20) _PostureTrackSmooth_: Smoothing value applied to posture-tracking data before reconstruction.
   21) _OrientTrackSmooth_: Smoothing value applied to orientation-tracking data before reconstruction.
   22)_ MoveTrackSmooth_: Smoothing value applied to movement-tracking data before reconstruction.
-All these individual column headings are discussed above in the steps listed.
+
+All these individual column headings are discussed above in the steps listed, but also see the example CSV file below. 
+
 _Example multi fish CSV file_: [Example_multifish.csv](https://github.com/user-attachments/files/32956820/Example_multifish.csv)
 
 
