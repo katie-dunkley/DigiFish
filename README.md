@@ -25,16 +25,16 @@ Users can add an overhead light to the scene through the DigiFish panel, and thr
 
 ## Adding fish
 ### 1) Setup fish model
-In a seperate .blend file ensure fish model is facing the correct direction. Because the scene is on an xy axis and is viewed from above, the fish model should be on the zx plane with it's head pointing to the left. Make sure to apply all transforms before saving .blend file (i.e. ensure all xyz rotation values are reset to 0). Model fish can be imported into blender in any compatabile format (e.g. .obj file), and can be generated via multiple methods including sculpting, MeshyAI and Sam3. 
+In a seperate `.blend` file ensure fish model is facing the correct direction. Because the scene is on an xy axis and is viewed from above, the fish model should be on the zx plane with it's head pointing to the left. Make sure to apply all transforms before saving .blend file (i.e. ensure all xyz rotation values are reset to 0). Model fish can be imported into blender in any compatabile format (e.g. `.obj file`), and can be generated via multiple methods including sculpting, MeshyAI and Sam3. 
 <img width="892" height="461" alt="Screenshot 2026-03-02 at 16 31 27" src="https://github.com/user-attachments/assets/fc1225e4-20b4-4a38-9f87-cb232b205cbb" />
 ![SetupFish](https://github.com/user-attachments/assets/0edd212f-bdf3-4a17-9e37-c326570bf345)
 
 ### 2) Add single fish model
-.blend files containing model fish can then be added to the reconstruction project using the DigiFish panel. Users can specify the size of the fish in cms and DigiFish implements this when adding. There is an option at this stage to add cameras at the eys of the fish. DigiFish works out the location of the eyes based on the model mesh, but this may need adjusting at times (see below). 
+`.blend` files containing model fish can then be added to the reconstruction project using the DigiFish panel. Users can specify the size of the fish in cms and DigiFish implements this when adding. There is an option at this stage to add cameras at the eys of the fish. DigiFish works out the location of the eyes based on the model mesh, but this may need adjusting at times (see below). 
 ![AddFish](https://github.com/user-attachments/assets/0bb75a82-8826-4298-9830-885f7c3ea654)
 
 #### Adjust eye position
-To ensure eye cameras are in the correct location, users may have to manually move them on the model fish (using "G" on the keyboard). The specific xyz location of the left eye camera can then be imported with the fish info ("Eye Cam Location") for reproducibility and consistency across eyes/individuals. Locations should be added as "1, x, y, z" (with 1 indicating a scale of 1). Users can change the size of the eyes through altering the scale value (although this does not change the eye camera size/resolution).  
+To ensure eye cameras are in the correct location, users may have to manually move them on the model fish (using `'G'` on the keyboard). The specific xyz location of the left eye camera can then be imported with the fish info (`'Eye Cam Location'`) for reproducibility and consistency across eyes/individuals. Locations should be added as `'1, x, y, z'` (with 1 indicating a scale of 1). Users can change the size of the eyes through altering the scale value (although this does not change the eye camera size/resolution).  
 ![MoveEyes](https://github.com/user-attachments/assets/58aeb0a8-0ef8-4ba4-888b-17413b84a074)
 
 ![MoveEyes2](https://github.com/user-attachments/assets/039868d5-40b7-4147-879d-8985f03a1030)
@@ -47,17 +47,17 @@ To map keypoint tracking data onto the model fish, users need to supply the name
 ![AddBones](https://github.com/user-attachments/assets/48399954-7e84-41d0-86ee-f6fbbd00f19f)
 
 ### 4) Animate fish
-To animate a model fish, users need to supply x-y (and optionally z) tracking data for each keypoint as a csv file. Column names must match the keypoint names used in the 'Add bones' stage and be followed by '.x', '.y' or '.z'. x-y data can be supplied in pixels (as it will be scaled by DigiFish using the supplied conversion) whilst z values should be provided in cms. If z is not supplied DigiFish assigns z as 1 cm as default.  
+To animate a model fish, users need to supply x-y (and optionally z) tracking data for each keypoint as a csv file. Column names must match the keypoint names used in the 'Add bones' stage and be followed by `'.x'`, `'.y'` or `'.z'`. x-y data can be supplied in pixels (as it will be scaled by DigiFish using the supplied conversion) whilst z values should be provided in cms. If z is not supplied DigiFish assigns z as 1 cm as default.  
 
 <img width="939" height="294" alt="Example csv" src="https://github.com/user-attachments/assets/6380a6fa-44cb-4f13-9f77-cc415ca04d80" />
 
 [SLEAPTracks_Zebra1.csv](https://github.com/user-attachments/files/32949376/SLEAPTracks_Zebra1.csv)
 
-If users wish to also animate pitch (head-up/down posture), the tracking file should also contain a 'pitch_deg' bearing column, with positive values indicating a head-up posture. This bearing value can be calculated using the following script and 3D tracking data of the first and second keypoints. 
+If users wish to also animate pitch (head-up/down posture), the tracking file should also contain a `'pitch_deg'` bearing column, with positive values indicating a head-up posture. This bearing value can be calculated using the following script and 3D tracking data of the first and second keypoints. 
 
 _Example code for calculating pitch from 3D tracking data:_ [Code_pitch.py](https://github.com/user-attachments/files/32950388/Code_pitch.py)
 
-CSV files are then added to DigiFish using the 'Animate fish' button on the DigiFish panel. Users supply smoothing values for the keypoints. DigiFish can work with different smoothing values for the different animation stages (posture, orient, move location), and users are encouraged to adjust these values until they are happy that the smoothness of the motion captures the real swimming behaviour of the fish being modelled. The smoothing function within DigiFish interacts with the frames per second of the tracking data, but broadly larger values remove more rapid changes in the data over time. Once 'OK' is clicked this step may take some time to implement. The eye tracking section can be left blank if these data are not available. 
+CSV files are then added to DigiFish using the 'Animate fish' button on the DigiFish panel. Users supply smoothing values for the keypoints. DigiFish can work with different smoothing values for the different animation stages (posture, orient, move location), and users are encouraged to adjust these values until they are happy that the smoothness of the motion captures the real swimming behaviour of the fish being modelled. The smoothing function within DigiFish interacts with the frames per second of the tracking data, but broadly larger values remove more rapid changes in the data over time. Once `'OK'` is clicked this step may take some time to implement. The eye tracking section can be left blank if these data are not available. 
 
 <img width="1280" height="727" alt="AnimateFish" src="https://github.com/user-attachments/assets/63921830-421d-4f62-a511-c84cf7b65caa" />
 
@@ -66,7 +66,7 @@ This step moves the fish model to the correct location in the scene.
 <img width="1512" height="859" alt="Screenshot 2026-10-02 at 11 22 36" src="https://github.com/user-attachments/assets/54ad2fbb-1583-4cd6-9869-4f708930ba94" />
 
 #### _Eye tracking data_
-Eye tracking data must be imported as calculated angles with negative angles indicating that the eye faces inwards towards the snout, and positive angles outward towards the tail. These data should be supplied in a CSV file with two separately named columns and a 'frame_idx' column. These names can be supplied by the user in the DigiFish panel. A smoothing value will also need to be supplied for these data and can differ from those values supplied for the tracking (value will depend on the temporal resolution of the tracking data). 
+Eye tracking data must be imported as calculated angles with negative angles indicating that the eye faces inwards towards the snout, and positive angles outward towards the tail. These data should be supplied in a CSV file with two separately named columns and a `'frame_idx'` column. These names can be supplied by the user in the DigiFish panel. A smoothing value will also need to be supplied for these data and can differ from those values supplied for the tracking (value will depend on the temporal resolution of the tracking data). 
 <img width="282" height="305" alt="Screenshot 2026-10-02 at 11 33 51" src="https://github.com/user-attachments/assets/afee163c-8da6-4330-8b03-cea090b0e602" />
 
 _Example code for calculating eye angles from tracking data:_ [Code_eyeangle.py](https://github.com/user-attachments/files/32956414/Code_eyeangle.py)
