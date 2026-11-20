@@ -227,6 +227,7 @@ This method produces a sequence of `.png` images, which can subsequently be conv
 
 ### Files for trying DigiFish 
 [Fish model](https://tinyurl.com/ModelFish): 3D model of a zebrafish (_Danio rerio_) created using Tripo 3D Studio. The geometry of this model needed simplifying in Blender first before it worked with DigiFish. To simplify the model, non-manifold edges were first fixed (using the [3D Print addon](https://extensions.blender.org/add-ons/print3d-toolbox/)), and the Decimate modifier was then used (collapse, ratio of 0.01) to reduce the number of vertices. Tripo 3D models have a high polygon count and this simplifies the model and allows it to bend with the armature. 
+
 [Scene](https://tinyurl.com/DigiFishLabScene): `.blend` file containing model of 3D laboratory arena  
 [Example track](https://github.com/user-attachments/files/35172936/LabTracks_track_0_49500-51900.csv): SleapAI tracked keypoints of a zebrafish. Pixel to cm conversion = 0.06249, Suggested smoothing start = 0.08. 
 
