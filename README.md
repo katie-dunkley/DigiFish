@@ -222,3 +222,10 @@ This method produces a sequence of `.png` images, which can subsequently be conv
 *Example output image:*
 
 <img width="2704" height="2704" alt="frame000000" src="https://github.com/user-attachments/assets/ab456970-6720-4c45-a232-4d15ce82325d" />
+
+### Files for trying DigiFish 
+[Fish model](https://tinyurl.com/ModelFish): 3D model of a zebrafish (_Danio rerio_) created using Tripo 3D Studio. The geometry of this model needed simplifying in Blender first before it worked with DigiFish. To simplify the model, non-manifold edges were first fixed, and the Decimate modifier was then used (ratio of 0.01) to reduce the number of vertices.     
+[Scene](https://tinyurl.com/DigiFishLabScene): `.blend` file containing model of 3D laboratory arena  
+Example track: SleapAI tracked keypoints of a zebrafish. Pixel to cm conversion = 0.06249, Suggested smoothing start = 0.08. 
+
+
