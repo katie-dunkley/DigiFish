@@ -226,7 +226,7 @@ This method produces a sequence of `.png` images, which can subsequently be conv
 <img width="2704" height="2704" alt="frame000000" src="https://github.com/user-attachments/assets/ab456970-6720-4c45-a232-4d15ce82325d" />
 
 ### Files for trying DigiFish 
-[Fish model](https://tinyurl.com/ModelFish): 3D model of a zebrafish (_Danio rerio_) created using Tripo 3D Studio. The geometry of this model needed simplifying in Blender first before it worked with DigiFish. To simplify the model, non-manifold edges were first fixed (using the [3D Print addon](https://extensions.blender.org/add-ons/print3d-toolbox/)), and the Decimate modifier was then used (collapse, ratio of 0.01) to reduce the number of vertices. Tripo 3D models have a high polygon count and this simplifies the model and allows it to bend with the armature. Keypoints: Head, COM, Caudal, Tail, KeypointPositions: 0.27, 0.53, 0.8, Segments: COM:5, Caudal:4
+[Fish model](https://tinyurl.com/ModelFish): 3D model of a zebrafish (_Danio rerio_) created using Tripo 3D Studio. The geometry of this model needed simplifying in Blender first before it worked with DigiFish. To simplify the model, non-manifold edges were first fixed (using the [3D Print addon](https://extensions.blender.org/add-ons/print3d-toolbox/)), and the Decimate modifier was then used (collapse, ratio of 0.01) to reduce the number of vertices (model now has ~10,000 vertices). Tripo 3D models have a high polygon count and this simplifies the model and allows it to bend with the armature. Keypoints: Head, COM, Caudal, Tail, KeypointPositions: 0.27, 0.53, 0.8, Segments: COM:5, Caudal:4
 
 [Scene](https://tinyurl.com/DigiFishLabScene): `.blend` file containing model of 3D laboratory arena  
 
